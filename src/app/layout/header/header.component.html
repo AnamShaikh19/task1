@@ -1,0 +1,71 @@
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom py-3">
+  <div class="container d-flex align-items-center">
+
+    <!-- Logo + Text -->
+    <a class="navbar-brand d-flex align-items-center gap-3 text-warning fw-bold fs-4 animate__animated animate__fadeInLeft " href="#">
+      <img src="/Logo_aitscs.png" alt="Logo" style="height: 50px;">
+
+      <span class="d-none d-md-inline text-white">Applied IT Solutions & Consultancy Services Ltd</span>
+      <span class="d-inline d-md-none text-white">AITSCS Ltd</span>    </a>
+
+    <!-- Hamburger / Toggler for mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items (including mobile dropdown) -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto text-uppercase fw-semibold"  style="margin-left: auto; margin-right: 40px;">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/about">About</a>
+        </li>
+
+        <!-- Sign Dropdown - Fully Mobile Responsive -->
+        <li class="nav-item dropdown " >
+          <a
+            class="nav-link dropdown-toggle text-white"
+            id="signDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            FAQ
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="signDropdown">
+            <li><a class="dropdown-item" routerLink="/faq/development">Application Development FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/cloudcomputing">Cloud Computing FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/cloudstorage">Cloud Storage FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/cybersecurity">Cyber Security FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/itsupport">It Support FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/carbonreduction">Carbon Reduction Plan FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/socialmedia">Social Media Marketing FAQs</a></li>
+            <li><a class="dropdown-item" routerLink="/faq/webdesigning">Web Designing FAQs</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/contactus">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- Navbar End -->
