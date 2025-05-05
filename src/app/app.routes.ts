@@ -36,6 +36,7 @@ export const routes: Routes = [
   {path:'contactus', component:ContactusComponent},
   {path:'faq', component:FaqComponent,
     children:[
+      {path:'', component:FaqComponent},
       {path:'development', component:DevelopmentComponent},
       {path:'cloudcomputing', component:CloudcomputingComponent},
       {path:'cloudstorage', component:CloudstorageComponent},
