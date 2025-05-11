@@ -18,6 +18,7 @@ import { DigitalmarketingComponent } from './features/service/digitalmarketing/d
 import { ProcessdevelopmentComponent } from './features/service/processdevelopment/processdevelopment.component';
 import { SpecialisedconsultancyComponent } from './features/service/specialisedconsultancy/specialisedconsultancy.component';
 import { WebdComponent } from './features/service/webd/webd.component';
+import { MainServiceComponent } from './features/service/main-service/main-service.component';
 
 
 export const routes: Routes = [
@@ -25,6 +26,7 @@ export const routes: Routes = [
 
   {path:'service', component:ServiceComponent,
     children:[
+      {path:'mainservice', component:MainServiceComponent},
       {path:'carbonreductionplan', component:CarbonreductionplanComponent},
       {path:'cloudsolutions', component:CloudsolutionsComponent},
       {path:'digitalmarketing', component:DigitalmarketingComponent},
