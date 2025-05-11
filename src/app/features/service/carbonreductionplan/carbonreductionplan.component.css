@@ -1,0 +1,47 @@
+
+.page-header {
+  margin-top: 100px; /* adjust this if your navbar is taller */
+}
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin: 50;
+}
+.timeline-panel {
+  max-width: 1000px !important;
+  width: 100% !important;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 4px;
+  background-color: #e9ecef;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline > li {
+  position: relative;
+  margin: 10px 0;
+
+}
+
+.section-box {
+  margin-top: -100px; /* adjust as needed */
+}
+
+/* ✅ MOBILE VIEW FIXES */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 40px;
+    transform: none;
+  }
+
+
+}
+
+
