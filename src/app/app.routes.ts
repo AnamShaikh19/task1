@@ -19,6 +19,15 @@ import { ProcessdevelopmentComponent } from './features/service/processdevelopme
 import { SpecialisedconsultancyComponent } from './features/service/specialisedconsultancy/specialisedconsultancy.component';
 import { WebdComponent } from './features/service/webd/webd.component';
 import { MainServiceComponent } from './features/service/main-service/main-service.component';
+import { PoliciesComponent } from './features/policies/policies.component';
+import { PrivacyPolicyComponent } from './features/policies/privacy-policy/privacy-policy.component';
+import { TermsOfUseComponent } from './features/policies/terms-of-use/terms-of-use.component';
+import { CookiesPolicyComponent } from './features/policies/cookies-policy/cookies-policy.component';
+import { AcceptableUsagePolicyComponent } from './features/policies/acceptable-usage-policy/acceptable-usage-policy.component';
+import { DataProtectionPolicyComponent } from './features/policies/data-protection-policy/data-protection-policy.component';
+import { BcmsComponent } from './features/policies/bcms/bcms.component';
+import { QmsPolicyComponent } from './features/policies/qms-policy/qms-policy.component';
+import { ModernSlaveryPolicyComponent } from './features/policies/modern-slavery-policy/modern-slavery-policy.component';
 
 
 export const routes: Routes = [
@@ -51,6 +60,20 @@ export const routes: Routes = [
 
     ]
   },
+  {path:'policies', component:PoliciesComponent,
+    children:[
+      {path:'', component:PoliciesComponent},
+      {path:'privacypolicy', component:PrivacyPolicyComponent},
+      {path:'termsofuse', component:TermsOfUseComponent},
+      {path:'cookiespolicy', component:CookiesPolicyComponent},
+      {path:'acceptableusagepolicy', component:AcceptableUsagePolicyComponent},
+      {path:'dataprotectionpolicy', component:DataProtectionPolicyComponent},
+      {path:'bcms', component:BcmsComponent},
+      {path:'qmspolicy', component:QmsPolicyComponent},
+      {path:'modernslaverypolicy', component:ModernSlaveryPolicyComponent},
+    ]
+  },
+
 
   {path:'**', redirectTo:'', pathMatch:'full' }
 

@@ -87,6 +87,9 @@
   color: #555;
   margin-bottom: 15px;
 }
+ .responsive-text {
+    font-size: 100px;
+  }
 .service-card a {
   color: #007bff;
   font-weight: 500;
