@@ -1,4 +1,5 @@
 
+
 .page-header {
   margin-top: 100px; /* adjust this if your navbar is taller */
 }
@@ -66,12 +67,6 @@ padding-top: 0%;
 .section-box {
   margin-top: -100px; /* adjust as needed */
 }
-.image-box img{
-  object-fit: scale-down;
-  width: 80%;
-  height: 80;
-  }
-
 
 /* ✅ MOBILE VIEW FIXES */
 @media (max-width: 768px) {
@@ -82,5 +77,8 @@ padding-top: 0%;
 
 
 }
+
+
+
 
 

@@ -28,6 +28,7 @@ import { DataProtectionPolicyComponent } from './features/policies/data-protecti
 import { BcmsComponent } from './features/policies/bcms/bcms.component';
 import { QmsPolicyComponent } from './features/policies/qms-policy/qms-policy.component';
 import { ModernSlaveryPolicyComponent } from './features/policies/modern-slavery-policy/modern-slavery-policy.component';
+import { KnowMeComponent } from './features/know-me/know-me.component';
 
 
 export const routes: Routes = [
@@ -73,6 +74,7 @@ export const routes: Routes = [
       {path:'modernslaverypolicy', component:ModernSlaveryPolicyComponent},
     ]
   },
+  {path:'knowme', component:KnowMeComponent},
 
 
   {path:'**', redirectTo:'', pathMatch:'full' }
