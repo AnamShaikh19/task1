@@ -29,6 +29,7 @@ import { BcmsComponent } from './features/policies/bcms/bcms.component';
 import { QmsPolicyComponent } from './features/policies/qms-policy/qms-policy.component';
 import { ModernSlaveryPolicyComponent } from './features/policies/modern-slavery-policy/modern-slavery-policy.component';
 import { KnowMeComponent } from './features/know-me/know-me.component';
+import { MainPolicyComponent } from './features/policies/main-policy/main-policy.component';
 
 
 export const routes: Routes = [
@@ -70,6 +71,7 @@ export const routes: Routes = [
       {path:'acceptableusagepolicy', component:AcceptableUsagePolicyComponent},
       {path:'dataprotectionpolicy', component:DataProtectionPolicyComponent},
       {path:'bcms', component:BcmsComponent},
+      {path:'mainpolicy', component:MainPolicyComponent},
       {path:'qmspolicy', component:QmsPolicyComponent},
       {path:'modernslaverypolicy', component:ModernSlaveryPolicyComponent},
     ]
