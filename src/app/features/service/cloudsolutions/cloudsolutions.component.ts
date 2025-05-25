@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cloudsolutions',
-  imports: [],
+  imports: [ RouterLink],
   templateUrl: './cloudsolutions.component.html',
   styleUrl: './cloudsolutions.component.css'
 })
