@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-faq',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.css'
 })
 export class FaqComponent {
-  
+
 
 }
